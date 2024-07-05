@@ -22,6 +22,8 @@ header {
 /* Style the main content */
 main {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -38,10 +40,11 @@ footer {
 
 #about-me {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
-    border-right: solid 10px black;
     margin-right: 10px;
+    gap: 20px;
 }
 
 #about-me img {
@@ -51,11 +54,21 @@ footer {
 }
 
 #work {
-    display: grid;
-    border: solid 10px black;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-top: 20px;
+    margin-right: 10px;
+    gap: 20px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 10px;
+    gap: 20px;
 }
 
 .work-item {
@@ -71,4 +84,19 @@ footer {
     display: grid;
     margin: 10px 0;
     float: inline-start;
+}
+
+#about-me h2 {
+    padding-right: 20px;
+    border-right: 10px solid black;
+}
+
+#work h2 {
+    padding-right: 20px;
+    border-right: 10px solid black;
+}
+
+#contact h2 {
+    padding-right: 20px;
+    border-right: 10px solid black;
 }
